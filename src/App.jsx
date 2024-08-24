@@ -2,6 +2,7 @@
 import { Global, css } from "@emotion/react";
 import Header from "./components/Header";
 import About from "./components/pages/About";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <main>
         <About />
       </main>
+      <Footer />
     </>
   );
 }
