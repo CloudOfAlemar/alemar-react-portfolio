@@ -1,7 +1,6 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { colors } from "../../constants/colors";
-import { utils } from "../../constants/utils";
+import { utils } from "../../../constants/utils";
 import ListItem from "./ListItem";
 
 const nav = css`

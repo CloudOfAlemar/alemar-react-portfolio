@@ -1,6 +1,6 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { colors } from "../../constants/colors";
+import { colors } from "../../../constants/colors";
 
 const navLink = css`
   color: ${colors.purpleShade};
