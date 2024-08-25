@@ -3,6 +3,7 @@ import { Global, css } from "@emotion/react";
 import Header from "./components/Header";
 import About from "./components/pages/About";
 import Footer from "./components/Footer";
+import Portfolio from "./components/pages/Portfolio";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           body {
             margin: 0;
           }
-          h2 {
+          h2,
+          p {
             margin: 0;
           }
         `}
@@ -24,6 +26,7 @@ function App() {
       <Header />
       <main>
         <About />
+        <Portfolio />
       </main>
       <Footer />
     </>

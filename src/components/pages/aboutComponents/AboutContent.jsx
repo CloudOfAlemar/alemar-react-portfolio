@@ -2,46 +2,22 @@
 import { css } from "@emotion/react";
 import { colors } from "../../../constants/colors";
 import headingIcon from "../../../assets/heading-icon.svg";
-
-const aboutContent = css`
-  margin-bottom: 4rem;
-`;
-
-const headingIconStyles = css`
-  width: 40px;
-`;
-
-const heading = css`
-  font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-  color: ${colors.melon};
-  span {
-    color: ${colors.purpleShade};
-  }
-`;
-
-const headingArea = css`
-  text-align: center;
-`;
-
-const paragraph = css`
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-  color: ${colors.purpleShade};
-  text-align: center;
-`;
+import common from "../../../constants/commonStyles";
 
 function AboutContent() {
   return (
-    <div css={aboutContent}>
-      <div css={headingArea}>
-        <img css={headingIconStyles} src={headingIcon} alt="" />
-        <h2 css={heading}>
+    <div css={common.sectionContent}>
+      <div css={common.sectionHeadingArea}>
+        <img
+          css={common.sectionHeadingIcon}
+          src={headingIcon}
+          alt="Robot Icon for display."
+        />
+        <h2 css={common.sectionHeading}>
           About <span>Me</span>
         </h2>
       </div>
-      <p css={paragraph}>
+      <p css={common.sectionParagraph}>
         Hello world, my name is Alejandro Martinez and I’m on my way to becoming
         a web developer. I’ve been learning to code for quite some time now,
         mainly focusing on the fundamentals with HTML, CSS and JavaScript using
