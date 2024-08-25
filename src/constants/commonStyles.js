@@ -1,8 +1,12 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { colors } from "./colors";
+import { utils } from "./utils";
 
 const commonStyles = {
+  sectionSpacing: css`
+    padding: 4rem ${utils.gutterSm};
+  `,
   sectionContent: css`
     margin-bottom: 4rem;
   `,

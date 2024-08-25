@@ -1,12 +1,8 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { utils } from "../../constants/utils";
+import common from "../../constants/commonStyles";
 import profileImg from "../../assets/me.jpg";
 import AboutContent from "./aboutComponents/AboutContent";
-
-const about = css`
-  padding: 4rem ${utils.gutterSm};
-`;
 
 const profileImgStyle = css`
   display: block;
@@ -16,10 +12,10 @@ const profileImgStyle = css`
 
 function About() {
   return (
-    <div css={about}>
+    <section css={common.sectionSpacing}>
       <AboutContent />
       <img css={profileImgStyle} src={profileImg} alt="" />
-    </div>
+    </section>
   );
 }
 
