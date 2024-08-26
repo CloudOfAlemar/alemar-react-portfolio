@@ -6,6 +6,10 @@ const icon = css`
   font-size: 3rem;
   color: ${colors.darkPurple};
   margin-right: 1.5rem;
+  @media screen and (min-width: 1400px) {
+    font-size: 5rem;
+    margin-right: 10rem;
+  }
 `;
 
 const otherLink = css`
@@ -14,6 +18,10 @@ const otherLink = css`
   line-height: 3.2rem;
   color: ${colors.pink};
   text-decoration: none;
+  @media screen and (min-width: 1400px) {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
 `;
 
 function SocialLinks() {

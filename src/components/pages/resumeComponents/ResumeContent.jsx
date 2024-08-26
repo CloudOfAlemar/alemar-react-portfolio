@@ -2,7 +2,7 @@
 import headingIcon from "../../../assets/heading-icon.svg";
 import common from "../../../constants/commonStyles";
 
-function PortfolioContent() {
+function ResumeContent() {
   return (
     <div css={common.sectionContent}>
       <div css={common.sectionHeadingArea}>
@@ -12,15 +12,15 @@ function PortfolioContent() {
           alt="Robot Icon for display."
         />
         <h2 css={common.sectionHeading}>
-          Portfol<span>io</span>
+          Resu<span>me</span>
         </h2>
       </div>
       <p css={common.sectionParagraph}>
-        Check out some of the projects I’ve built, along with the technologies
-        that were used.
+        Below are the technologies I've worked with, and you can view my resume
+        by clicking the link provided,
       </p>
     </div>
   );
 }
 
-export default PortfolioContent;
+export default ResumeContent;
