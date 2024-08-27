@@ -1,7 +1,9 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { colors } from "../../../constants/colors";
 
 const bubble = css`
+  position: relative;
   width: 335px;
   height: 200px;
   overflow: hidden;
@@ -29,10 +31,37 @@ const spanGrid = css`
   }
 `;
 
-function ProjectBubble({ img, column }) {
+const projectTitle = css`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  background-color: ${colors.darkPurple};
+  color: ${colors.offWhite};
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+`;
+const githubIcon = css`
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: ${colors.darkPurple};
+  color: ${colors.offWhite};
+  padding: 1rem 2rem;
+  font-size: 2.2rem;
+  border-radius: 15px;
+`;
+
+function ProjectBubble({ img, column, projectName, live, github }) {
   return (
     <div css={[bubble, spanGrid, column]}>
       <img css={imgStyle} src={img} alt="Project Screenshot" />
+      <a css={projectTitle} href={live} target="_blank">
+        {projectName}
+      </a>
+      <a css={githubIcon} href={github} target="_blank">
+        <i className="fa-brands fa-square-github"></i>
+      </a>
     </div>
   );
 }

@@ -16,7 +16,10 @@ function ResumeContent() {
         </h2>
       </div>
       <p css={common.sectionParagraph}>
-        Below are the technologies I've worked with, and you can view my resume
+        Below are the technologies I've worked with, and you can view my{" "}
+        <a href="/Resume.docx" target="_blank" download="Resume.docx">
+          resume
+        </a>{" "}
         by clicking the link provided,
       </p>
     </div>

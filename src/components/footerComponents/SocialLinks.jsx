@@ -27,13 +27,21 @@ const otherLink = css`
 function SocialLinks() {
   return (
     <div>
-      <a css={icon} href="">
+      <a css={icon} href="https://github.com/CloudOfAlemar" target="_blank">
         <i className="fa-brands fa-square-github"></i>
       </a>
-      <a css={icon} href="">
+      <a
+        css={icon}
+        href="https://www.linkedin.com/in/alejandro-martinez-2b115127a/"
+        target="_blank"
+      >
         <i className="fa-brands fa-linkedin"></i>
       </a>
-      <a css={otherLink} href="">
+      <a
+        css={otherLink}
+        href="https://www.frontendmentor.io/profile/CloudOfAlemar"
+        target="_blank"
+      >
         Frontend Mentor
       </a>
     </div>
