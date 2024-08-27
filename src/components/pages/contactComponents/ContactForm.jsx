@@ -1,6 +1,7 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { colors } from "../../../constants/colors";
+import { useState } from "react";
 
 const inputStyle = css`
   background-color: ${colors.offWhite};
@@ -30,36 +31,71 @@ const formBtn = css`
   font-weight: 500;
 `;
 
-function ContactForm() {
-  return (
-    <form action="">
-      <input
-        css={inputStyle}
-        type="text"
-        name="inputName"
-        id="inputName"
-        placeholder="Name"
-      />
+const message = css`
+  font-size: 1.6rem;
+  color: ${colors.red};
+`;
 
-      <input
-        css={inputStyle}
-        type="email"
-        name="inputEmail"
-        id="inputEmail"
-        placeholder="Email"
-      />
-      <textarea
-        css={inputStyle}
-        name="inputMessage"
-        id="inputMessage"
-        cols="30"
-        rows="10"
-        defaultValue="Message"
-      ></textarea>
-      <button css={formBtn} type="submit">
-        Submit
-      </button>
-    </form>
+function ContactForm() {
+  const [messageValue, setMessage] = useState("");
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+  const handleBlur = (e) => {
+    if (e.target.value.trim() === "") {
+      setMessage(`${e.target.name} field is required.`);
+    } else {
+      setMessage("");
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    if (e.target.value.trim() === "") {
+      setMessage(`${e.target.name} field is required.`);
+    } else if (!validateEmail(e.target.value.trim())) {
+      setMessage("Not a valid email.");
+    } else {
+      setMessage("");
+    }
+  };
+
+  return (
+    <div>
+      <p css={message}>{messageValue}</p>
+      <form action="">
+        <input
+          css={inputStyle}
+          type="text"
+          name="name"
+          id="inputName"
+          placeholder="Name"
+          onBlur={handleBlur}
+        />
+
+        <input
+          css={inputStyle}
+          type="email"
+          name="email"
+          id="inputEmail"
+          placeholder="Email"
+          onBlur={handleBlur}
+          onChange={handleEmailChange}
+        />
+        <textarea
+          css={inputStyle}
+          name="message"
+          id="inputMessage"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+          onBlur={handleBlur}
+        ></textarea>
+        <button css={formBtn} type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   );
 }
 

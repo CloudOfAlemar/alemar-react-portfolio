@@ -1,8 +1,21 @@
-# React + Vite
+# Alemar React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is meant to showcase my work as an aspiring web developer to potential employers. This project itself demonstrates my creativity and abilities and links the viewer to other projects that I have completed. I hope to convey with this project that although I have so much to learn, I've also come a long way and truly enjoy the process of learning web development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built with
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Emotion
+
+## Links
+
+[Link to Live Site]()
+
+## Screenshot
+
+![Alemar React Portfolio Screenshot](./public/alemar-react-portfolio-screenshot.png)
