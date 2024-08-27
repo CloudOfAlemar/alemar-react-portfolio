@@ -14,7 +14,7 @@ This project is meant to showcase my work as an aspiring web developer to potent
 
 ## Links
 
-[Link to Live Site]()
+[Link to Live Site](https://main--soft-caramel-eda6df.netlify.app/)
 
 ## Screenshot
 
