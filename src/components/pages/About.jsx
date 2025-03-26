@@ -24,6 +24,8 @@ const profileImgStyle = css`
 `;
 
 const aboutContainer = css`
+  max-width: 1440px;
+  margin: auto;
   @media screen and (min-width: 768px) {
     display: flex;
   }

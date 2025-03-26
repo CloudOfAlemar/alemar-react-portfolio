@@ -22,6 +22,8 @@ const navbarContainer = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: auto;
 `;
 
 const logoImg = css`

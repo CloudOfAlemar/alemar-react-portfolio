@@ -11,6 +11,8 @@ const heroArea = css`
 `;
 
 const heroContainer = css`
+  max-width: 1440px;
+  margin: auto;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;

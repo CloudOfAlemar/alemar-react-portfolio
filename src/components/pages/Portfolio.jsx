@@ -6,7 +6,7 @@ import project1 from "../../assets/bmi-calculator-img.png";
 import project2 from "../../assets/equilizer-img.png";
 import project3 from "../../assets/meet-landing-page-img.png";
 import project4 from "../../assets/skilled-e-learning-img.png";
-import project5 from "../../assets/workit-landing-page-img.png";
+import project5 from "../../assets/habit-tracker-img.png";
 import project6 from "../../assets/tech-blog-screenshot.png";
 import PortfolioContent from "./portfolioComponents/PortfolioContent";
 import ProjectBubble from "./portfolioComponents/ProjectBubble";
@@ -99,9 +99,9 @@ function Portfolio() {
         <ProjectBubble
           img={project5}
           column={projBubble5}
-          projectName="Workit Landing Page"
-          live="https://cloudofalemar.github.io/WorkitLandingPage/"
-          github="https://github.com/CloudOfAlemar/WorkitLandingPage"
+          projectName="Habit Tracker"
+          live="https://alemar-habit-tracker.netlify.app/"
+          github="https://github.com/CloudOfAlemar/habit-tracker"
         />
       </div>
     </section>
