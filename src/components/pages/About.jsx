@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import common from "../../constants/commonStyles";
 import profileImg from "../../assets/me.jpg";
 import AboutContent from "./aboutComponents/AboutContent";
+import ContactContent from "./aboutComponents/ContactContent";
 
 const profileImgStyle = css`
   display: block;
@@ -25,7 +26,7 @@ const profileImgStyle = css`
 
 const aboutContainer = css`
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto 8rem;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -38,6 +39,8 @@ function About() {
         <AboutContent />
         <img css={profileImgStyle} src={profileImg} alt="" />
       </div>
+      {/* NOTE: Inject Contact Code Here */}
+      <ContactContent />
     </section>
   );
 }

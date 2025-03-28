@@ -13,9 +13,7 @@ const aboutContent = css`
 `;
 
 const contentParagraph = css`
-  @media screen and (min-width: 768px) {
-    text-align: left;
-  }
+  text-align: left;
 `;
 
 function AboutContent() {
@@ -32,15 +30,19 @@ function AboutContent() {
         </h2>
       </div>
       <p css={[common.sectionParagraph, contentParagraph]}>
-        Hello world, my name is Alejandro Martinez and I’m on my way to becoming
-        a web developer. I’ve been learning to code for quite some time now,
-        mainly focusing on the fundamentals with HTML, CSS and JavaScript using
-        online resources like Udemy and Youtube. <br />
-        I’ve built several projects on the Frontend Mentor website that have
-        helped reinforce my skills which I will link in the Project section. And
-        now I am glad to be taking a course that can hopefully allow me to break
-        into the industry. I’m so excited and ready to be a productive part of
-        an amazing team.
+        I'm an aspiring frontend web developer eager to contribute to a collaborative development team. 
+        To build a strong foundation in web development, I've created several projects using HTML,
+        CSS, and JavaScript, focusing on core principles and best practices.
+      </p>
+      <p css={[common.sectionParagraph, contentParagraph]}>
+        Among my most notable 
+        projects are the Habit Tracker and Tech Blog, both of which required frontend and backend
+        implementation. You can explore these projects in the portfolio section of my website.
+      </p>
+      <p css={[common.sectionParagraph, contentParagraph]}>
+        I recently earned a Full Stack Web Development Certificate from UC Irvine’s Continuing Education 
+        Program. With this certification, my hands-on experience, and a deep passion for lifelong 
+        learning, I strive to become a valuable asset to a web development team.
       </p>
     </div>
   );

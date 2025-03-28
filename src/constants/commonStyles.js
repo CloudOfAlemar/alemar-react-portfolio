@@ -37,6 +37,7 @@ const commonStyles = {
     font-size: 1.4rem;
     line-height: 2.8rem;
     color: ${colors.purpleShade};
+    margin-bottom: 1.5rem;
     text-align: center;
     @media screen and (min-width: 1400px) {
       font-size: 1.8rem;

@@ -1,6 +1,24 @@
 /**@jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import headingIcon from "../../../assets/heading-icon.svg";
 import common from "../../../constants/commonStyles";
+import { colors } from "../../../constants/colors";
+
+const contactParagraph = css`
+  max-width: 750px;
+  margin: auto;
+`;
+
+const emailArea = css`
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const emailLink = css`
+  font-size: 2rem;
+`;
 
 function ContactContent() {
   return (
@@ -15,10 +33,14 @@ function ContactContent() {
           Contact<span>Me</span>
         </h2>
       </div>
-      <p css={common.sectionParagraph}>
+      <p css={[common.sectionParagraph, contactParagraph]}>
         Feel free to reach out if you're interested in my work. I'm excited to
         collaborate with an amazing team and bring new ideas to life!
       </p>
+      <div css={emailArea}>
+        <i className="fa-solid fa-envelope" style={{fontSize: "4rem", marginRight: "2rem", color: `${colors.darkPurple}`}}></i>
+        <a href="mailto: cloudof.alemar@gmail.com" css={emailLink}>cloudof.alemar@gmail.com</a>
+      </div>
     </div>
   );
 }

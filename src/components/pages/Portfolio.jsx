@@ -2,11 +2,11 @@
 import { css } from "@emotion/react";
 import { utils } from "../../constants/utils";
 import common from "../../constants/commonStyles";
-import project1 from "../../assets/bmi-calculator-img.png";
-import project2 from "../../assets/equilizer-img.png";
+import project1 from "../../assets/habit-tracker-img.png";
+import project2 from "../../assets/bmi-calculator-img.png";
 import project3 from "../../assets/meet-landing-page-img.png";
 import project4 from "../../assets/skilled-e-learning-img.png";
-import project5 from "../../assets/habit-tracker-img.png";
+import project5 from "../../assets/equilizer-img.png";
 import project6 from "../../assets/tech-blog-screenshot.png";
 import PortfolioContent from "./portfolioComponents/PortfolioContent";
 import ProjectBubble from "./portfolioComponents/ProjectBubble";
@@ -64,9 +64,9 @@ function Portfolio() {
         <ProjectBubble
           img={project1}
           column={projBubble1}
-          projectName="BMI Calculator"
-          live="https://cloudofalemar.github.io/BMICalculator/"
-          github="https://github.com/CloudOfAlemar/BMICalculator"
+          projectName="Habit Tracker"
+          live="https://alemar-habit-tracker.netlify.app/"
+          github="https://github.com/CloudOfAlemar/habit-tracker"
         />
         <ProjectBubble
           img={project6}
@@ -78,9 +78,9 @@ function Portfolio() {
         <ProjectBubble
           img={project2}
           column={projBubble2}
-          projectName="Equilizer Landing Page"
-          live="https://cloudofalemar.github.io/EqualizerLandingPage/"
-          github="https://github.com/CloudOfAlemar/EqualizerLandingPage"
+          projectName="BMI Calculator"
+          live="https://cloudofalemar.github.io/BMICalculator/"
+          github="https://github.com/CloudOfAlemar/BMICalculator"
         />
         <ProjectBubble
           img={project3}
@@ -99,9 +99,9 @@ function Portfolio() {
         <ProjectBubble
           img={project5}
           column={projBubble5}
-          projectName="Habit Tracker"
-          live="https://alemar-habit-tracker.netlify.app/"
-          github="https://github.com/CloudOfAlemar/habit-tracker"
+          projectName="Equilizer Landing Page"
+          live="https://cloudofalemar.github.io/EqualizerLandingPage/"
+          github="https://github.com/CloudOfAlemar/EqualizerLandingPage"
         />
       </div>
     </section>

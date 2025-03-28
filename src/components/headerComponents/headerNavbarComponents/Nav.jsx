@@ -20,7 +20,7 @@ const list = css`
     display: flex;
   }
   @media screen and (min-width: 1400px) {
-    width: 721px;
+    width: 500px;
     justify-content: space-between;
   }
 `;
@@ -31,7 +31,7 @@ function Nav() {
       <ul css={list}>
         <ListItem listTitle="About Me" path="/" />
         <ListItem listTitle="Portfolio" path="/portfolio" />
-        <ListItem listTitle="Contact Me" path="/contact" />
+        {/* <ListItem listTitle="Contact Me" path="/contact" /> */}
         <ListItem listTitle="Resume" path="/resume" />
       </ul>
     </nav>

@@ -15,7 +15,9 @@ function ResumeContent() {
           Resu<span>me</span>
         </h2>
       </div>
-      <p css={common.sectionParagraph}>
+      <p 
+        css={common.sectionParagraph}
+      >
         Below are the technologies I've worked with, and you can view my{" "}
         <a href="/Resume.docx" target="_blank" download="Resume.docx">
           resume
