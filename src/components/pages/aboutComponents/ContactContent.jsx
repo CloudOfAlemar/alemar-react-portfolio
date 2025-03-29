@@ -14,10 +14,23 @@ const emailArea = css`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 `;
 
 const emailLink = css`
+  font-size: 1.6rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+`;
+
+const icon = css`
   font-size: 2rem;
+  color: ${colors.darkPurple}
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 
 function ContactContent() {
@@ -38,7 +51,7 @@ function ContactContent() {
         collaborate with an amazing team and bring new ideas to life!
       </p>
       <div css={emailArea}>
-        <i className="fa-solid fa-envelope" style={{fontSize: "4rem", marginRight: "2rem", color: `${colors.darkPurple}`}}></i>
+        <i className="fa-solid fa-envelope" css={icon}></i>
         <a href="mailto: cloudof.alemar@gmail.com" css={emailLink}>cloudof.alemar@gmail.com</a>
       </div>
     </div>

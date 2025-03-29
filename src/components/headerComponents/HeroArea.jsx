@@ -15,7 +15,7 @@ const heroContainer = css`
   margin: auto;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 `;
@@ -31,10 +31,12 @@ const heroImgStyles = css`
   }
   @media screen and (min-width: 876px) {
     max-width: 450px;
+    margin-right: -5rem;
   }
   @media screen and (min-width: 1400px) {
     max-width: 750px;
     margin-left: 10rem;
+    margin-right: -8rem;
   }
 `;
 

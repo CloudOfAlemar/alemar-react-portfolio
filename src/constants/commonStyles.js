@@ -60,6 +60,50 @@ const commonStyles = {
       padding-right: 10rem;
     }
   `,
+  pillGrid: css`
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 2rem;
+      max-width: 728px;
+      margin: auto;
+    }
+  `,
+  pill1: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 5/7
+    }
+  `,
+  pill2: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 7/9
+    }
+  `,
+  pill3: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 4/6
+    }
+  `,
+  pill4: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 6/8
+    }
+  `,
+  pill5: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 8/10
+    }
+  `,
+  pill6: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 5/7
+    }
+  `,
+  pill7: css`
+    @media screen and (min-width: 768px) {
+      grid-column: 7/9
+    }
+  `
 };
 
 export default commonStyles;

@@ -5,7 +5,7 @@ import common from "../../../constants/commonStyles";
 
 const aboutContent = css`
   @media screen and (min-width: 768px) {
-    max-width: 418px;
+    max-width: 600px;
   }
   @media screen and (min-width: 1400px) {
     max-width: 712px;

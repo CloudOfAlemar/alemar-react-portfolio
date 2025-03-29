@@ -14,11 +14,14 @@ const pillStyle = css`
   border-radius: 100px;
   width: 164px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 `;
 
-function Pill({ pillName, shadowColor }) {
+function Pill({ pillName, shadowColor, pillPosition }) {
   return (
-    <div css={pillStyle} style={{ boxShadow: `10px 10px 24px ${shadowColor}` }}>
+    <div css={[pillStyle, pillPosition]} style={{ boxShadow: `10px 10px 24px ${shadowColor}` }}>
       {pillName}
     </div>
   );

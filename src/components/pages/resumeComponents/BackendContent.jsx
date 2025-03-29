@@ -1,6 +1,7 @@
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { colors } from "../../../constants/colors";
+import common from "../../../constants/commonStyles";
 
 import Pill from "./Pill";
 
@@ -13,9 +14,23 @@ const heading = css`
   span {
     color: ${colors.purplePrimary};
   }
+  @media screen and (min-width: 768px) {
+    max-width: 728px;
+    margin: 0 auto 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 `;
 
 const backendPillColor = colors.purplePrimary;
+
+const pillGrid = css`
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+`;
 
 function BackendContent() {
   return (
@@ -23,14 +38,14 @@ function BackendContent() {
       <h3 css={heading}>
         Backend <span>Proficiencies</span>
       </h3>
-      <div>
-        <Pill pillName="APIS" shadowColor={backendPillColor} />
-        <Pill pillName="Node JS" shadowColor={backendPillColor} />
-        <Pill pillName="Express" shadowColor={backendPillColor} />
-        <Pill pillName="MySQL/Sequelize" shadowColor={backendPillColor} />
-        <Pill pillName="Rest" shadowColor={backendPillColor} />
-        <Pill pillName="MongoDB/Mongoose" shadowColor={backendPillColor} />
-        <Pill pillName="GraphQL" shadowColor={backendPillColor} />
+      <div css={[common.pillGrid, pillGrid]}>
+        <Pill pillName="APIS" shadowColor={backendPillColor} pillPosition={common.pill1}/>
+        <Pill pillName="Node JS" shadowColor={backendPillColor} pillPosition={common.pill2}/>
+        <Pill pillName="Express" shadowColor={backendPillColor} pillPosition={common.pill3}/>
+        <Pill pillName="MySQL/Sequelize" shadowColor={backendPillColor} pillPosition={common.pill4}/>
+        <Pill pillName="Rest" shadowColor={backendPillColor} pillPosition={common.pill5}/>
+        <Pill pillName="MongoDB/Mongoose" shadowColor={backendPillColor} pillPosition={common.pill6}/>
+        <Pill pillName="Handlebars" shadowColor={backendPillColor} pillPosition={common.pill7}/>
       </div>
     </div>
   );
