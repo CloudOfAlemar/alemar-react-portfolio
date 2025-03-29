@@ -31,7 +31,7 @@ function ResumeContent() {
         css={common.sectionParagraph}
       >
         Here are the technologies I've worked with, and you can view my{" "}
-        <a href="/Resume.docx" target="_blank" download="Resume.docx">
+        <a href="/frontendResume.docx" target="_blank" download="frontendResume.docx">
           resume
         </a>{" "}
         by clicking the link provided.
